@@ -23,6 +23,8 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.ItemTouchHelper;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -209,7 +211,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             @Override
             public void onEvent(@Nullable QuerySnapshot value, @Nullable FirebaseFirestoreException error) {
                 if (error != null) { return; }
-                
+
                 products.clear();
 
                 assert value != null;
@@ -266,6 +268,18 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         btnEdit.setOnClickListener(this::updateProduct);
 
         btnDelete.setOnClickListener(this::deleteProduct);
+
+//        new ItemTouchHelper(new ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.LEFT) {
+//            @Override
+//            public boolean onMove(@NonNull RecyclerView recyclerView, @NonNull RecyclerView.ViewHolder viewHolder, @NonNull RecyclerView.ViewHolder target) {
+//                return false;
+//            }
+//
+//            @Override
+//            public void onSwiped(@NonNull RecyclerView.ViewHolder viewHolder, int direction) {
+//                viewHolder.getAdapterPosition()
+//            }
+//        });
     }
 
     public void addProduct() {

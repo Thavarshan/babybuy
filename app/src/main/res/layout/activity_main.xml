@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#f1f5f9"
     tools:context=".MainActivity">
 
     <EditText
@@ -13,26 +14,28 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
+        android:autofillHints=""
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="@string/name"
+        android:inputType="textPersonName"
+        android:textColorHint="#546E7A"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:autofillHints="" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/etProductPrice"
-        android:layout_width="234dp"
+        android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:autofillHints=""
         android:ems="10"
-        android:hint="@string/price"
+        android:hint="@string/price_hint"
         android:inputType="textPersonName"
+        android:textColorHint="#546E7A"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.014"
+        app:layout_constraintHorizontal_bias="0.019"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etProductName" />
 
@@ -59,13 +62,14 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
+        android:autofillHints=""
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="@string/description"
+        android:inputType="textPersonName"
+        android:textColorHint="#546E7A"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etProductPrice"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/etProductPrice" />
 
     <TextView
         android:id="@+id/tvImagePath"
@@ -76,7 +80,7 @@
         android:layout_marginEnd="20dp"
         android:gravity="center"
         android:hint="@string/image_path"
-        android:textColorHint="#757575"
+        android:textColorHint="#616161"
         app:layout_constraintEnd_toStartOf="@+id/btnImageUpload"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etProductDescription" />
@@ -123,7 +127,7 @@
         android:layout_marginEnd="20dp"
         android:text="@string/delete"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.931"
+        app:layout_constraintHorizontal_bias="0.958"
         app:layout_constraintStart_toEndOf="@+id/btnEdit"
         app:layout_constraintTop_toBottomOf="@+id/btnImageUpload" />
 
@@ -132,6 +136,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="20dp"
+        android:background="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.514"

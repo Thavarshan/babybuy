@@ -40,7 +40,7 @@ public class Collection extends ArrayAdapter<Product> {
         productName.setText(product.getName());
         productDescription.setText(product.getDescription());
         productPurchased.setText(product.getPurchased());
-        productPrice.setText("£ " + product.getPrice());
+        productPrice.setText("£" + product.getPrice());
         Glide.with(getContext())
                 .load(product.getFilePath())
                 .placeholder(R.drawable.box)
