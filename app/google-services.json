@@ -1,0 +1,39 @@
+{
+    "project_info": {
+        "project_number": "283483364095",
+        "project_id": "babybuy-65961",
+        "storage_bucket": "babybuy-65961.appspot.com"
+    },
+    "client": [
+        {
+            "client_info": {
+                "mobilesdk_app_id": "1:283483364095:android:08d35e8ff817481a9ecaca",
+                "android_client_info": {
+                    "package_name": "edu.sunderland.babybuy"
+                }
+            },
+            "oauth_client": [
+                {
+                    "client_id": "283483364095-bg4qfgapij2rvt29ifjt98tessarur2i.apps.googleusercontent.com",
+                    "client_type": 3
+                }
+            ],
+            "api_key": [
+                {
+                    "current_key": "AIzaSyDxrly133qa-Mzg2PC8E36oefCyI11Swkg"
+                }
+            ],
+            "services": {
+                "appinvite_service": {
+                    "other_platform_oauth_client": [
+                        {
+                            "client_id": "283483364095-bg4qfgapij2rvt29ifjt98tessarur2i.apps.googleusercontent.com",
+                            "client_type": 3
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "configuration_version": "1"
+}
